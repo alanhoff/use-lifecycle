@@ -62,9 +62,9 @@ A hook that's a replacement for the [`componentWillUnmount`][2] method.
 import {useWillUnmount} from 'use-lifecycle';
 
 export default function MyComponent(props) {
-  useWillUnmount(prevProps => {
+  useWillUnmount(() => {
     console.log('MyComponent will unmount');
-  }, props);
+  });
 }
 ```
 
